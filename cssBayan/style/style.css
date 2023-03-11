@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-mono-v22-latin-regular.eot');
+    }
+  html {
+    scroll-behavior: smooth;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto Mono', sans-serif;
+    background-color:rgb(233, 242, 246);
+    color: rgb(8, 128, 247);
+    font-size: 1em;
+  }
+  .header {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10vh;
+  }
+  .gif_container {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+  }
+  .gif_container__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arrow_btn {
+    width: 1.2vw;
+    height: 1.2vh;
+    filter: invert(100%);
+    margin-right: 0.9rem;
+    transition: all 0.4s;
+  }
+  .prog_gif {
+    width: 0;
+    height: 0;
+    transition: all 0.4s;
+  }
+  h1 {
+    text-align: start;
+    text-shadow: 0.5rem -0.5rem 1rem rgb(134, 191, 245);
+  }
+  .gif_container__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:black;
+    transition: all 0.4s;
+  }
+  .gif_container__item {
+    background-color: rgb(202, 228, 250);
+  }
+  .gif_container__btn {
+    background-color: rgb(94, 172, 244);
+    padding: 0.7rem;
+  }
+  .label_gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gif__input:checked~label .prog_gif,
+  .gif_container__item:hover .prog_gif,
+  .gif_container__item:focus .prog_gif {
+    width: 50%;
+    height: 50%;
+    padding: 0.8rem 0;
+  }
+  .gif_container:hover .arrow_btn,
+  .gif_container:focus .arrow_btn {
+    background: url('../assets/arrow.svg') center/cover no-repeat;
+  }
+  .gif__input:checked~label .arrow_btn,
+  .gif_container__item:hover .arrow_btn,
+  .gif_container__item:focus .arrow_btn {
+    transform: rotate(-180deg);
+  }
+  .gif__input:checked~label .gif_container__title,
+  .gif_container:hover .gif_container__title,
+  .gif_container:focus .gif_container__title {
+    color: white;
+    text-shadow: 0.05rem 0.05rem 0.1rem black;
+  }
+  .gif_container__item,
+  .gif_container__btn,
+  .prog_gif {
+    cursor: pointer;
+  }
+  @media (max-width: 1200px) {
+    .header,
+    .gif_container {
+      max-width: 70%;
+    }
+  }
+  @media (max-width: 860px) {
+    .gif_container__title {
+      font-size: 0.9rem;
+    }
+    .gif_container__item:hover .prog_gif {
+      width: 0;
+      height: 0;
+      padding: 0;
+    }
+    .arrow_btn {
+      background: url('../assets/arrow.svg') center/cover no-repeat;
+    }
+    .gif_container__item:hover .arrow_btn {
+      transform: rotate(0);
+    }
+    .gif_container:hover .gif_container__title {
+      color: black;
+      text-shadow: none;
+    }
+    .gif__input:checked~label .prog_gif {
+      width: 70%;
+      height: 70%;
+      padding: 0.5rem 0;
+    }
+  }
+  @media (max-width: 700px) {
+    .arrow_btn {
+      width: 1.5vw;
+      height: 1.5vh;
+    }
+  }
+  @media (max-width: 370px) {
+    .header {
+      margin-top: 5vh;
+    }
+    .header,
+    .gif_container {
+      max-width: 90%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .gif_container__title {
+      font-size: 0.8rem;
+    }
+    .arrow_btn {
+      margin-right: 0.5rem;
+    }
+    .gif__input:checked~label .prog_gif {
+      width: 90%;
+      height: 90%;
+    }
+  }
