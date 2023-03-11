@@ -97,3 +97,62 @@
   .prog_gif {
     cursor: pointer;
   }
+  @media (max-width: 1200px) {
+    .header,
+    .gif_container {
+      max-width: 70%;
+    }
+  }
+  @media (max-width: 860px) {
+    .gif_container__title {
+      font-size: 0.9rem;
+    }
+    .gif_container__item:hover .prog_gif {
+      width: 0;
+      height: 0;
+      padding: 0;
+    }
+    .arrow_btn {
+      background: url('../assets/arrow.svg') center/cover no-repeat;
+    }
+    .gif_container__item:hover .arrow_btn {
+      transform: rotate(0);
+    }
+    .gif_container:hover .gif_container__title {
+      color: black;
+      text-shadow: none;
+    }
+    .gif__input:checked~label .prog_gif {
+      width: 70%;
+      height: 70%;
+      padding: 0.5rem 0;
+    }
+  }
+  @media (max-width: 700px) {
+    .arrow_btn {
+      width: 1.5vw;
+      height: 1.5vh;
+    }
+  }
+  @media (max-width: 370px) {
+    .header {
+      margin-top: 5vh;
+    }
+    .header,
+    .gif_container {
+      max-width: 90%;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    .gif_container__title {
+      font-size: 0.8rem;
+    }
+    .arrow_btn {
+      margin-right: 0.5rem;
+    }
+    .gif__input:checked~label .prog_gif {
+      width: 90%;
+      height: 90%;
+    }
+  }
