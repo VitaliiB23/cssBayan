@@ -3,11 +3,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/roboto-mono-v22-latin-regular.eot');
-    src: local(''),
-         url('../fonts//roboto-mono-v22-latin-regular.woff2') format('woff2'), 
-         url('../fonts//roboto-mono-v22-latin-regular.woff') format('woff'), 
-         url('../fonts/roboto-mono-v22-latin-regular.ttf') format('truetype'), 
-  }
+    }
   html {
     scroll-behavior: smooth;
   }
@@ -16,8 +12,8 @@
   }
   body {
     font-family: 'Roboto Mono', sans-serif;
-    background-color:rgb(231, 242, 245);
-    color: rgb(31, 232, 243);
+    background-color:rgb(233, 242, 246);
+    color: rgb(8, 128, 247);
     font-size: 1em;
   }
   .header {
@@ -50,7 +46,7 @@
   }
   h1 {
     text-align: start;
-    text-shadow: 0.5rem -0.5rem 1rem rgb(132, 198, 218);
+    text-shadow: 0.5rem -0.5rem 1rem rgb(134, 191, 245);
   }
   .gif_container__title {
     font-size: 1.2rem;
